@@ -306,27 +306,6 @@ class DocBuilder:
         Check for broken links in the documentation.
         """
         return self._sphinx_build("linkcheck")
-    
-    def custom_function(self, param1, param2):
-        """
-        A custom function for the documentation builder.
-
-        Parameters
-        ----------
-        param1 : int
-            The first parameter.
-        param2 : str
-            The second parameter.
-
-        Returns
-        -------
-        bool
-            True if successful, False otherwise.
-        """
-        # Add your custom functionality here
-        print(f"Running custom function with parameters: {param1}, {param2}")
-        return True
-
 
 
 def main():
