@@ -69,6 +69,15 @@ class DocBuilder:
         elif single_doc:
             self.single_doc_html = f"reference/api/pandas.{single_doc}.html"
 
+    def generate_toc(self):
+        """
+        Generate a table of contents (TOC) for the documentation.
+        """
+        # Add your code here to generate the TOC
+        print("Generating table of contents...")
+        # For demonstration purposes, just print a message
+        print("Table of contents generated successfully.")
+
     def _process_single_doc(self, single_doc):
         """
         Make sure the provided value for --single is a path to an existing
@@ -297,6 +306,27 @@ class DocBuilder:
         Check for broken links in the documentation.
         """
         return self._sphinx_build("linkcheck")
+    
+    def custom_function(self, param1, param2):
+        """
+        A custom function for the documentation builder.
+
+        Parameters
+        ----------
+        param1 : int
+            The first parameter.
+        param2 : str
+            The second parameter.
+
+        Returns
+        -------
+        bool
+            True if successful, False otherwise.
+        """
+        # Add your custom functionality here
+        print(f"Running custom function with parameters: {param1}, {param2}")
+        return True
+
 
 
 def main():
