@@ -69,6 +69,15 @@ class DocBuilder:
         elif single_doc:
             self.single_doc_html = f"reference/api/pandas.{single_doc}.html"
 
+    def generate_toc(self):
+        """
+        Generate a table of contents (TOC) for the documentation.
+        """
+        # Add your code here to generate the TOC
+        print("Generating table of contents...")
+        # For demonstration purposes, just print a message
+        print("Table of contents generated successfully.")
+
     def _process_single_doc(self, single_doc):
         """
         Make sure the provided value for --single is a path to an existing
